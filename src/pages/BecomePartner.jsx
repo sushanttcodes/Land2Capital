@@ -16,9 +16,26 @@ function BecomePartner() {
 
         {/* Right Side Form */}
         <div className="p-8 flex flex-col justify-center bg-white rounded-2xl">
-          <h2 className="text-2xl font-bold text-red-900 mb-2">
-            Welcome to Land2Capital <span>🌹</span>
-          </h2>
+          {/* Scrolling Welcome Text with Bouquets */}
+          <div className="overflow-hidden whitespace-nowrap mb-4">
+            <p className="text-2xl font-bold text-red-900 inline-block animate-marquee flex items-center">
+           <marquee behavior="scroll" direction="left" scrollamount="10">
+
+              <img
+                src="/images/bookey.webp"
+                alt="Bouquet"
+                className="h-8 w-8 mr-2 inline-block"
+              />
+              Welcome to Land2Capital
+              <img
+                src="/images/bookey.webp"
+                alt="Bouquet"
+                className="h-8 w-8 ml-2 inline-block"
+              />
+               </marquee>
+            </p>
+          </div>
+
           <p className="text-gray-600 mb-6">Become Our B2B Associate</p>
 
           <form className="space-y-4">
